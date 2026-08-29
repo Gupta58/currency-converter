@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <p><b>Amount:</b></p>
+                <input value="1" type="text">
+            </div>
+            <p class="para">Enter the amount you want to convert</p>
+            <div class="dropdown">
+                <div class="from">
+                    <p class="parafromto"><b>From</b></p>
+                   <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from">
+
+                            <!-- <option value="usd">USD</option>
+                            <option value="inr">INR</option>
+                            <option value="eur">EUR</option>
+                            <option value="aud">AUD</option> -->
+
+
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to">
+                     <p class="parafromto"><b>To</b></p>
+                   <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to">
+
+                            <!-- <option value="usd">USD</option>
+                            <option value="inr" selected>INR</option>
+                            <option value="eur">EUR</option>
+                            <option value="aud">AUD</option>
+                         -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p class="parafromto"><b>Exchange rate</b></p>
+            <div class="msg">
+                <p id="exc">1USD = 90 INR</p>
+                <br>
+                <br>
+                Rate Date = 28 Augest
+            </div>
+
+            <p id="loading"></p>
+            
+            <p id="camt"><b>Converted Amount</b></p>
+            <div class="result">
+                my result
+            </div>
+            
+            <button >Get Exchange Rate</button>
+        </form>
+    </div>
+    
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
